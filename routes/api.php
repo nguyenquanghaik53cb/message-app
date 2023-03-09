@@ -14,6 +14,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('test-route', function () {
+    return "You are welcome!";
+});
+Route::post('/users/login', [UserController::class, 'login']);
+Route::post('/users/logout', [UserController::class, 'logout']);
+Route::post('/users/register', [UserController::class, 'register']);
+Route::post('/users/resetPassword', [UserController::class, 'resetPassword']);
+Route::post('/users/resetPassword-activation', [UserController::class, 'resetPasswordActivation']);
+Route::get('/show_list_rooms', [RoomController::class, 'listRooms']);//list rooms for user can choose join
+Route::get('/show_users_on_room/{id}', [RoomController::class, 'listUsersOnRoom']);//show number users on room
+Route::get('/save_message/{id}', [RoomController::class, 'saveMessage']);//saving message
+Route::get('/list_old_message/{id}', [RoomController::class, 'listMessages']);//get list old messages showing on chatting two users
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('v1')->namespace('API\V1')->group(function () {
+    require base_path('routes/api/v1.php');
+});
+
