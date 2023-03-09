@@ -23,6 +23,11 @@ You can see more on database/migradtions
 3. Frontend
 
 		Use angularjs for show data from api on backend return
+		1. Build template for show list rooms
+		User after login can see list rooms then click to join room
+		2. User can see total users are available on room
+		3. User can send message on room is joined
+		4. User click logout button to out of message application
 
 4. Use pusher for making real time chatting
 
