@@ -4,7 +4,7 @@ Step to build message application:
 Tables:
 - rooms (id, name, status, created, updated, deleted): This is table for management rooms chatting
 - users (id, username, name_display, status, email, password, created, updated, deleted): This is table for management users chatting send message between
-- room_users (id, room_id, user_id, message, created, updated, deleted): This table for management message users on room
+- messages (id, room_id, user_id, message, created, updated, deleted): This table for management message users on room
 
 You can see more on database/migradtions
 

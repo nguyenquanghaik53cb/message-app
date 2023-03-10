@@ -28,11 +28,8 @@ Route::get('/save_message/{id}', [RoomController::class, 'saveMessage']);//savin
 Route::get('/list_old_message/{id}', [RoomController::class, 'listMessages']);//get list old messages showing on chatting two users
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('v1')->namespace('API\V1')->group(function () {
-    require base_path('routes/api/v1.php');
-});
 
