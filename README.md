@@ -1,4 +1,4 @@
-Step to build message application:
+Step to implement message application on backend:
 
 1. Build database
 Tables:
@@ -30,4 +30,31 @@ You can see more on database/migradtions
 		4. User click logout button to out of message application
 
 4. Use pusher for making real time chatting
+
+
+
+
+How to build on client
+Step to build calculator app on angularjs
+
+1. Go to folder message-app-client-angular
+
+
+2. Install all the npm packages
+
+```bash
+npm install
+```
+
+3. In order to run the application type the following command
+
+```bash
+npm start
+```
+
+the application will auto start with port is building by angular
+
+
+
+
 
