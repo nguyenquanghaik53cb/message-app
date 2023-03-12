@@ -35,7 +35,7 @@ You can see more on database/migradtions
 
 
 How to build on client
-Step to build calculator app on angularjs
+Step to build message app on angularjs
 
 1. Go to folder message-app-client-angular
 
